@@ -33,6 +33,9 @@
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('email') }}">{{ __('Email Send') }}</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('notification') }}">{{ __('Push Notification') }}</a>
+                        </li>
                     </ul>
 
                     <!-- Right Side Of Navbar -->
@@ -79,6 +82,6 @@
         </main>
     </div>
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-    @yield('scripts')
+    @stack('scripts')
 </body>
 </html>

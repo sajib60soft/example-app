@@ -78,4 +78,9 @@ class MemberController extends Controller
     {
         //
     }
+
+    public function test(Request $request)
+    {
+        return 'PP';
+    }
 }

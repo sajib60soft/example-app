@@ -20,3 +20,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::resource('members', MemberController::class);
+Route::get('/test', [MemberController::class, 'test']);
